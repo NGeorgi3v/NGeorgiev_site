@@ -1,0 +1,242 @@
+#### CSS ####
+
+
+/*Standart Normalization*/
+
+html, body, header, nav, ul, li, a, h1, h2, h3, h4, h5, h6, aside, main,section, article, p, footer, div{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Header*/
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #3498db;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 5% 0;
+}
+
+#logo{
+	width: 150px;
+	height: 150px;
+	background-image: url('../imgs/logo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+#logo,
+header > h1{
+	margin-left: 20%;
+}
+header > h1{
+	float: left;
+	margin-left: 10%;
+	padding-top: 50px;
+}
+
+
+
+/*Navigation*/
+
+nav{
+    width: 100%;
+    background-color: #2ecc71;
+}
+
+nav > ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/*Navigation items*/
+
+nav > ul > li > a{
+    margin:0;
+    padding: 10px;
+    color: #ecf0f1;
+    font-size: 24pt;
+}
+
+nav > ul > li > a:hover {
+    background-color: #27ae60;
+    transition: all 0.75s;
+}
+
+/*Content Wrapper*/
+
+div.wrapper{
+    width: 100%;
+    background-color: #f1c40f;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+div.wrapper > h1{
+    padding: 10px 0;
+}
+
+/*Aside and Main*/
+
+aside,
+main{
+    color: #ecf0f1;
+    min-height: 300px;
+    padding-top: 2%;
+}
+
+/*Aside*/
+
+aside{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #34495e;
+}
+
+/*Main*/
+
+main{
+    float: right;
+    width: 70%;
+    background-color: #95a5a6;
+    padding: 10px 0;
+}
+
+/*Sections and Articles*/
+
+section,
+article{
+    text-align: left;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+/*Section*/
+
+section{
+    background-color: #e67e22;
+}
+
+/*Article*/
+
+article{
+    background-color: #e74c3c;
+    margin-top: 10px;
+}
+
+/*Clearing div for floats*/
+
+div.clr{
+    clear: both;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    background-color: #9b59b6;
+    width: 100%;
+    height: 100px;
+    color: #ecf0f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### HTML #####
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="utf-8" />
+    <title>Website template by NGeorgiev</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="shortcut icon" href="http://www.iconarchive.com/download/i22783/kyo-tux/phuzion/Sign-Info.ico" type="image/x-icon" />
+</head>
+<body>
+	 <header>
+        <div id="logo"></div><h1>This is the header!</h1>
+    </header>
+	<div class="clr"></div>
+    <nav>
+        <ul>
+            <li><a href="www.google.com">Link</a></li>
+            <li><a href="www.google.com">Link</a></li>
+            <li><a href="www.google.com">Link</a></li>
+            <li><a href="www.google.com">Link</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <h1>Aside and main content wrapper</h1>
+        <aside>
+            <h1>This is the aside</h1>
+        </aside>
+        <main>
+            <h1>This is the main content</h1>
+            <section>
+            	<h1>This is a section</h1>
+            	<article>
+            		<h1>This is an article</h1>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. </p>
+            	</article>
+            	<article>
+            		<h1>This is an article</h1>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. </p>
+            	</article>
+            	<article>
+            		<h1>This is an article</h1>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. </p>
+            	</article>
+
+            </section>
+        </main>
+        <div class="clr"></div>
+    </div>
+    <footer>
+    	<h1>This is the footer</h1>
+    </footer>
+
+
+    <script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
